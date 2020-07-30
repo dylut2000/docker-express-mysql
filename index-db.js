@@ -17,7 +17,7 @@ con.connect(function (err) {
   }
   console.log("Mysql connected success...");
   con.query(
-    "CREATE TABLE IF NOT EXISTS visits (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, ts BIGINT)",
+    "CREATE TABLE IF NOT EXISTS customers (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, ts BIGINT)",
     (err) => {
       if (err) throw err;
     }
@@ -27,10 +27,11 @@ con.connect(function (err) {
 // Request handling
 app.get("/", (req, res) => {
   // create table if not exist
-  con.query("INSERT INTO visits (ts) values (?)", Date.now(), (err, dbRes) => {
-    if (err) throw err;
-    res.send("Hello World! You are visitor number " + dbRes.insertId);
-  });
+//   con.query("INSERT INTO visits (ts) values (?)", Date.now(), (err, dbRes) => {
+//     if (err) throw err;
+//     res.send("Hello World! You are visitor number " + dbRes.insertId);
+//   });
+res.status(200).json({'status': 'it works'});
 });
 
 // server
