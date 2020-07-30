@@ -6,4 +6,4 @@ app.get("/", function (req, res) {
   res.send("Hello #dylut2000!");
 });
 
-const server = app.listen(port, () => console.log(`http://localhost:${port}`));
+app.listen(port, () => console.log(`http://localhost:${port}`));
