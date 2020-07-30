@@ -1,0 +1,24 @@
+{
+  "name": "docker-express-mysql-jenkins",
+  "version": "1.0.0",
+  "description": "just testing how to deploy using jenking docker-compose",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install inherits && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylut2000/docker-express-mysql.git"
+  },
+  "author": "Hardy-Lutula #Dylut2000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylut2000/docker-express-mysql/issues"
+  },
+  "homepage": "https://github.com/dylut2000/docker-express-mysql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "mysql": "^2.18.1"
+  }
+}
