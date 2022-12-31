@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "inherits": "^2.0.4",
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "ms": "^2.1.2",
     "nodemon": "^2.0.4"
   }
